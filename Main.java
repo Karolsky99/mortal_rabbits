@@ -33,10 +33,10 @@ public class Main {
             deadRabbit.setData(-1, -1);
             rabbitArray[y] = deadRabbit;
         }
-        // filling array with the starting pair of rabbits
+        // filling array with the starting pair of rabbits, male and female
         for (int s = 0; s < sum; s++) {
             Rabbit myRabbit = new Rabbit();
-            myRabbit.setData(0, rand.nextInt(2));
+            myRabbit.setData(0, s%2);
             rabbitArray[s] = myRabbit;
         }
 
